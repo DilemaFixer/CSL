@@ -1,7 +1,7 @@
 #ifndef LOGGER_H
 #define LOGGER_H
 
-// You can copy code to your project from 
+// You can copy code to your project from
 // https://github.com/DilemaFixer/CSL
 
 #pragma GCC diagnostic push
@@ -36,7 +36,10 @@ void logger(const char* file, int line, log_level level, const char* format, ...
 #define dlog(format, ...) logger(__FILE__, __LINE__, DEBUG, format, ##__VA_ARGS__)
 #define ilog(format, ...) logger(__FILE__, __LINE__, INFO, format, ##__VA_ARGS__)
 #define wlog(format, ...) logger(__FILE__, __LINE__, WARN, format, ##__VA_ARGS__)
-#define elog(format, ...) logger(__FILE__, __LINE__, ERR, format, ##__VA_ARGS__)
+#define elog(format, ...) do { \
+    logger(__FILE__, __LINE__, ERR, format, ##__VA_ARGS__); \
+    exit(1); \
+} while(0)
 
 #pragma GCC diagnostic pop
 #endif
