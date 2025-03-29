@@ -20,19 +20,19 @@ Copy these commands to download just the logger files into your project:
 
 ```bash
 # Create directory if it doesn't exist
-mkdir -p include/logger
+mkdir -p include
 
 # Download the header file
-curl -o include/logger/logger.h https://raw.githubusercontent.com/yourusername/logger/main/logger.h
+curl -o include/logger.h https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.h
 
 # Download the implementation file
-curl -o src/logger.c https://raw.githubusercontent.com/yourusername/logger/main/logger.c
+curl -o src/logger.c https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.c
 ```
 
 ### Option 2: Clone the entire repository
 
 ```bash
-git clone https://github.com/yourusername/logger.git
+git clone https://github.com/DilemaFixer/CSL.git
 ```
 
 ## Basic Usage
