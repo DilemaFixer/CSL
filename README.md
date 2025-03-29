@@ -52,12 +52,6 @@ int main() {
 }
 ```
 
-## Compilation
-
-```bash
-gcc -Wall -Wextra -I./include -o myapp main.c src/logger.c
-```
-
 ## Advanced Usage
 
 ### Custom Log Handlers
