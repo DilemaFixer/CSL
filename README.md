@@ -19,14 +19,11 @@ A flexible, lightweight, and extensible logging system for C applications with s
 Copy these commands to download just the logger files into your project:
 
 ```bash
-# Create directory if it doesn't exist
-mkdir -p include
-
 # Download the header file
-curl -o include/logger.h https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.h
+curl -o logger.h https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.h
 
 # Download the implementation file
-curl -o src/logger.c https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.c
+curl -o logger.c https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.c
 ```
 
 ### Option 2: Clone the entire repository
