@@ -28,7 +28,7 @@ typedef enum log_level {
    INFO,
    WARN,
    ERR,
-   NONE 
+   NONE
 } log_level;
 
 typedef struct log_message {
@@ -54,17 +54,6 @@ void clear_log_handlers(void);
 
 void set_log_level(log_level level);
 log_level get_log_level(void);
-
-#define dlog(format, ...) logger(__FILE__, __LINE__, DEBUG, format, ##__VA_ARGS__)
-#define ilog(format, ...) logger(__FILE__, __LINE__, INFO, format, ##__VA_ARGS__)
-#define wlog(format, ...) logger(__FILE__, __LINE__, WARN, format, ##__VA_ARGS__)
-#define elog(format, ...) do { \
-    logger(__FILE__, __LINE__, ERR, format, ##__VA_ARGS__); \
-    exit(1); \
-} while(0)
-
-#pragma GCC diagnostic pop
-#endifger(const char* file, int line, log_level level, const char* format, ...);
 
 #define dlog(format, ...) logger(__FILE__, __LINE__, DEBUG, format, ##__VA_ARGS__)
 #define ilog(format, ...) logger(__FILE__, __LINE__, INFO, format, ##__VA_ARGS__)
