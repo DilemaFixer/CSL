@@ -9,21 +9,7 @@ CSL (C Simple Logger) is a lightweight, flexible logging library for C applicati
 
 ## 📥 Installation
 
-### Linux & macOS
-
 ```bash
-mkdir -p csl && cd csl
-
-curl -o logger.h https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.h
-curl -o logger.c https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.c
-```
-
-### Windows
-
-```batch
-mkdir csl
-cd csl
-
 curl -o logger.h https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.h
 curl -o logger.c https://raw.githubusercontent.com/DilemaFixer/CSL/main/logger.c
 ```
